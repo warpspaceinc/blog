@@ -18,15 +18,11 @@ defaultContentLanguageInSubdir = false
 
   [[params.socialIcons]]
     name = "github"
-    url = "https://github.com/warpspace"
+    url = "https://github.com/warpspaceinc"
 
   [[params.socialIcons]]
     name = "twitter"
-    url = "https://twitter.com/caveduck_io"
-
-  [[params.socialIcons]]
-    name = "linkedin"
-    url = "https://linkedin.com/company/warpspace"
+    url = "https://x.com/Caveduck_kr"
 
   [[params.socialIcons]]
     name = "website"
