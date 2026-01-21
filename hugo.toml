@@ -1,0 +1,136 @@
+baseURL = 'https://warpspaceinc.github.io/blog/'
+title = 'Warpspace Tech Blog'
+theme = 'PaperMod'
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
+
+[params]
+  env = "production"
+  author = "Warpspace Team"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/warpspace"
+
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://twitter.com/caveduck_io"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/company/warpspace"
+
+  [[params.socialIcons]]
+    name = "website"
+    url = "https://caveduck.io"
+
+[languages]
+  [languages.en]
+    languageCode = 'en-US'
+    languageName = 'English'
+    weight = 1
+    title = 'Warpspace Tech Blog'
+    [languages.en.params]
+      description = "Warpspace Tech Blog - Creators of Caveduck.io, the AI Companion Service"
+      [languages.en.params.homeInfoParams]
+        Title = "Welcome to Warpspace Tech Blog"
+        Content = "We are the creators of [Caveduck.io](https://caveduck.io) - Your AI Companion Service. Follow our journey in AI, technology, and innovation."
+    [[languages.en.menu.main]]
+      identifier = "posts"
+      name = "Posts"
+      url = "/posts/"
+      weight = 10
+    [[languages.en.menu.main]]
+      identifier = "tags"
+      name = "Tags"
+      url = "/tags/"
+      weight = 20
+    [[languages.en.menu.main]]
+      identifier = "archives"
+      name = "Archives"
+      url = "/page/archives/"
+      weight = 30
+    [[languages.en.menu.main]]
+      identifier = "about"
+      name = "About"
+      url = "/page/about/"
+      weight = 40
+
+  [languages.ko]
+    languageCode = 'ko-KR'
+    languageName = '한국어'
+    weight = 2
+    title = '워프스페이스 테크 블로그'
+    [languages.ko.params]
+      description = "워프스페이스 테크 블로그 - AI 컴패니언 서비스 Caveduck.io를 만듭니다"
+      [languages.ko.params.homeInfoParams]
+        Title = "워프스페이스 테크 블로그에 오신 것을 환영합니다"
+        Content = "[Caveduck.io](https://caveduck.io) - AI 컴패니언 서비스를 만드는 Warpspace입니다. AI, 기술, 혁신에 대한 이야기를 나눕니다."
+    [[languages.ko.menu.main]]
+      identifier = "posts"
+      name = "글"
+      url = "/ko/posts/"
+      weight = 10
+    [[languages.ko.menu.main]]
+      identifier = "tags"
+      name = "태그"
+      url = "/ko/tags/"
+      weight = 20
+    [[languages.ko.menu.main]]
+      identifier = "archives"
+      name = "아카이브"
+      url = "/ko/page/archives/"
+      weight = 30
+    [[languages.ko.menu.main]]
+      identifier = "about"
+      name = "소개"
+      url = "/ko/page/about/"
+      weight = 40
+
+  [languages.ja]
+    languageCode = 'ja-JP'
+    languageName = '日本語'
+    weight = 3
+    title = 'Warpspace テックブログ'
+    [languages.ja.params]
+      description = "Warpspace テックブログ - AIコンパニオンサービス Caveduck.io を開発しています"
+      [languages.ja.params.homeInfoParams]
+        Title = "Warpspace テックブログへようこそ"
+        Content = "[Caveduck.io](https://caveduck.io) - AIコンパニオンサービスを開発するWarpspaceです。AI、テクノロジー、イノベーションについて発信します。"
+    [[languages.ja.menu.main]]
+      identifier = "posts"
+      name = "記事"
+      url = "/ja/posts/"
+      weight = 10
+    [[languages.ja.menu.main]]
+      identifier = "tags"
+      name = "タグ"
+      url = "/ja/tags/"
+      weight = 20
+    [[languages.ja.menu.main]]
+      identifier = "archives"
+      name = "アーカイブ"
+      url = "/ja/page/archives/"
+      weight = 30
+    [[languages.ja.menu.main]]
+      identifier = "about"
+      name = "について"
+      url = "/ja/page/about/"
+      weight = 40
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
+    codeFences = true
